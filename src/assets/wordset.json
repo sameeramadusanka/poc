@@ -1,0 +1,73 @@
+
+[
+	{
+		"label": "map",
+        "itemkind": "Function",
+        "detail":"map(Traversal<S, E>)",
+        "documentation": "map the traverser to some object of type E for the next step to process.",
+        "insertText":"map(Traversal<S, E>)"
+	},
+	{
+		"label": "map",
+        "itemkind": "Constant",
+        "detail":"map(Function<Traverser<S>, E>)",
+        "documentation": "map the traverser to some object of type E for the next step to process.",
+        "insertText":"map(Function<Traverser<S>, E>)"
+	},
+	{
+		"label": "flatMap",
+        "itemkind": "Constructor",
+        "detail":"flatMap(Traversal<S, E>)",
+        "documentation": "map the traverser to an iterator of E objects that are streamed to the next step.",
+        "insertText":"flatMap(Traversal<S, E>)"
+	},
+	{
+		"label": "flatMap",
+        "itemkind": "Enum",
+        "detail":"flatMap(Function<Traverser<S>, Iterator<E>>)",
+        "documentation": "map the traverser to an iterator of E objects that are streamed to the next step.",
+        "insertText":"flatMap(Function<Traverser<S>, Iterator<E>>)"
+	},
+	{
+		"label": "filter",
+        "itemkind": "Event",
+        "detail":"filter(Traversal<?, ?>)",
+        "documentation": "map the traverser to either true or false, where false will not pass the traverser to the next step.",
+        "insertText":"filter(Traversal<?, ?>)"
+	},
+	{
+		"label": "filter",
+        "itemkind": "Field",
+        "detail":"filter(Predicate<Traverser<S>>)",
+        "documentation": "map the traverser to either true or false, where false will not pass the traverser to the next step.",
+        "insertText":"filter(Predicate<Traverser<S>>)"
+	},
+	{
+		"label": "sideEffect",
+        "itemkind": "Method",
+        "detail":"sideEffect(Traversal<S, S>)",
+        "documentation": "perform some operation on the traverser and pass it to the next step.",
+        "insertText":"sideEffect(Traversal<S, S>)"
+	},
+	{
+		"label": "sideEffect",
+        "itemkind": "value",
+        "detail":"sideEffect(Consumer<Traverser<S>>)",
+        "documentation": "perform some operation on the traverser and pass it to the next step.",
+        "insertText":"sideEffect(Consumer<Traverser<S>>)"
+	},
+	{
+		"label": "branch",
+        "itemkind": "Variable",
+        "detail":"branch(Traversal<S, M>)",
+        "documentation": "split the traverser to all the traversals indexed by the M token.",
+        "insertText":"branch(Traversal<S, M>)"
+	},
+	{
+		"label": "branch",
+        "itemkind": "Keyword",
+        "detail":"branch(Function<Traverser<S>,M>)",
+        "documentation": "split the traverser to all the traversals indexed by the M token.",
+        "insertText":"branch(Function<Traverser<S>,M>)"
+	}
+]
